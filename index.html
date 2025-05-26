@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja Webstránka</title>
+  <style>
+    body {
+      background-color: #f0f8ff; /* svetlomodré pozadie */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 3em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #34495e;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      margin-top: 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Vitaj na mojej stránke!</h1>
+  <p>Toto je jednoduchá webová stránka vytvorená cez GPT.</p>
+  <button onclick="alert('Stlačil si tlačidlo!')">Klikni ma</button>
+</body>
+</html>
