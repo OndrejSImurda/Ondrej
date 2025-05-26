@@ -1,0 +1,8 @@
+# Vychádzame z oficiálneho nginx obrazu
+FROM nginx:latest
+
+# Odstránime defaultný index.html
+RUN rm /usr/share/nginx/html/index.html
+
+# Skopírujeme náš index.html do adresára, kde nginx hľadá súbory
+COPY index.html /usr/share/nginx/html/index.html
